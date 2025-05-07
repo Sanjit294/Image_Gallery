@@ -52,22 +52,21 @@ Publish the website in the given URL.
       position: relative;
     }
 
-    /* Move the title to the top left */
     h1 {
       position: absolute;
       top: 7px;
       left: 10px;
       font-size: 1.2em;
       text-shadow: 2px 2px 4px black;
-      font-weight: normal; /* Reducing the thickness of the text */
+      font-weight: normal; 
     }
 
-    /* Gallery container to hold images in a circle */
+    
     .gallery-container {
       position: absolute;
       top: 300px; 
-      width: 20px;  /* Diameter of the circle */
-      height: 20px; /* Diameter of the circle */
+      width: 20px;  
+      height: 20px; 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -75,7 +74,7 @@ Publish the website in the given URL.
 
     .gallery-container img {
       position: absolute;
-      width: 150px;  /* Size of each image */
+      width: 150px; 
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
@@ -84,7 +83,7 @@ Publish the website in the given URL.
     }
 
     .gallery-container img:hover {
-      transform: scale(1.05); /* Scale image on hover */
+      transform: scale(1.05); 
     }
 
     #modal {
@@ -140,7 +139,6 @@ Publish the website in the given URL.
   <h1>Image Gallery</h1>
 
   <div class="gallery-container">
-    <!-- Images are positioned in a circle with more gaps -->
     <img src="jk.jpg" alt="Image 1" onclick="openModal(this)" style="transform: rotate(0deg) translateY(-190px);">
     <img src="tf.jpg" alt="Image 2" onclick="openModal(this)" style="transform: rotate(46.5deg) translateY(-285px);">
     <img src="deads.jpg" alt="Image 3" onclick="openModal(this)" style="transform: rotate(90deg) translateY(-498px);">
